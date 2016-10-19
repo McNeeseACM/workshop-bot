@@ -27,10 +27,12 @@ var WorkshopBot = require('../lib/workshop-bot');
 
 var token = process.env.BOT_API_KEY;
 var name = process.env.BOT_NAME;
+var new_user_greeting = process.env.NEW_USER_GREETING;
 
 var workshopBot = new WorkshopBot({
   token: token,
-  name: name
+  name: name,
+  new_user_greeting: new_user_greeting
 });
 
 workshopBot.run();
